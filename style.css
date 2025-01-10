@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.back {
+    padding: 32px 0;
+    background-color: #000000;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    color: rgb(100, 61, 197);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #ffff;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(100, 61, 197);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width: 991px) {
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .back {
+        padding: 47px 0;
+    }
+
+    .menu.navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #2a394f;
+        display: none;
+    }
+
+    .menu.navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked~.navbar {
+        display: initial;
+    }
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #000, #333);
+    color: #e7e7e7;
+    overflow-x: hidden;
+}
+
+#titulo {
+    background-color: #2E4052;
+    color: white;
+    padding: 3rem 2rem;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.contenido {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+section article:hover {
+    box-shadow: 0 0.20rem 0.15rem rgb(100, 61, 197);
+}
+
+#logo {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-style: solid;
+    padding: 20px;
+    transition: all 0.5s ease;
+}
+
+img {
+    transition: all 0.5s linear;
+}
+
+h2 {
+    color: #0230cb;
+}
+
+table, th, td {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+#Indice li a {
+    color: #fcfcfc;
+}
+
+a[href="#Indice"] {
+    color: #f5f3f3;
+}
+
+/* Estilos del encabezado */
+header {
+    height: 100vh;
+    background: linear-gradient(135deg, #000, #333);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+header h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 0;
+    animation: slideDown 1s ease-out;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin: 10px 0 20px;
+    color: #bbb;
+    animation: slideDown 1.5s ease-out;
+}
+
+header a {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    animation: fadeInUp 2s ease-out;
+}
+
+header a:hover {
+    background-color: #111;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.navbar2 {
+    background: #111;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar2 ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar2 li {
+    margin: 0 15px;
+}
+
+.navbar2 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.navbar2 a:hover {
+    background: #fff;
+    color: #000;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    padding: 50px 20px;
+    margin: 20px 0;
+    background: #222;
+    border-radius: 10px;
+    animation: fadeInUp 1.5s ease;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #484dff;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
